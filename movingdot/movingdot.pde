@@ -21,7 +21,7 @@ void loop()
    
   if(Button_Right)  
   {
-    if(ReadPx(xcoord+1,ycoord)!=Blue)
+    if(ReadPx(xcoord+1,ycoord)!=Blue)    //the != means the dot cannot equal to blue inorder to move
     xcoord++;
   }
   
@@ -56,9 +56,23 @@ void loop()
 
   void DrawWalls()
   {
-    DrawPx(1,1,Blue);
+    DrawPx(1,1,Blue);            //drawing a spiral wall the dot cannot go onto
     DrawPx(1,2,Blue);
     DrawPx(1,3,Blue);
+    DrawPx(1,4,Blue);
+    DrawPx(1,6,Blue);
+    DrawPx(2,6,Blue);
+    DrawPx(3,6,Blue);
+    DrawPx(4,6,Blue);
+    DrawPx(5,6,Blue);
+    DrawPx(6,6,Blue);
+    DrawPx(6,5,Blue);
+    DrawPx(6,4,Blue);
+    DrawPx(6,3,Blue);
+    DrawPx(6,2,Blue);
+    DrawPx(6,1,Blue);
+   
+   
   
   }
   
