@@ -9,6 +9,7 @@ void setup()
 
 void loop()
 { 
+  DrawWalls();
   
   DrawPx(xcoord,ycoord,Red);
   CheckButtonsPress();
@@ -25,7 +26,7 @@ void loop()
    ClearSlate();
   
 
-  if(xcoord>7)        //allows the dot to loop around the meggy screen 
+  if(xcoord>7)        //allows the dot to loop around the meggy screen  
     xcoord=0;
   if(xcoord<0)
     xcoord=7;
@@ -37,3 +38,9 @@ void loop()
   }
   
 
+  void DrawWalls()
+  {
+    DrawPx(1,1,Blue);
+    DrawPx(1,2,Blue);
+    DrawPx(1,3,Blue);
+  }
