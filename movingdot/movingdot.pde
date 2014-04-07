@@ -41,7 +41,7 @@ void loop()
    ClearSlate();
   
 
-  if(xcoord>7)        //allows the dot to loop around the meggy screen  
+  if(xcoord>7)        //allows the dot to stay on the meggy screen  
     xcoord=7;
   if(xcoord<0)
     xcoord=0;
@@ -56,7 +56,7 @@ void loop()
 
   void DrawWalls()
   {
-    DrawPx(1,1,Blue);            //drawing a spiral wall the dot cannot go onto
+    DrawPx(1,1,Blue);            //drawing wall in blue
     DrawPx(1,2,Blue);
     DrawPx(1,3,Blue);
     DrawPx(1,4,Blue);
@@ -64,15 +64,18 @@ void loop()
     DrawPx(2,6,Blue);
     DrawPx(3,6,Blue);
     DrawPx(4,6,Blue);
-    DrawPx(5,6,Blue);
     DrawPx(6,6,Blue);
     DrawPx(6,5,Blue);
     DrawPx(6,4,Blue);
-    DrawPx(6,3,Blue);
     DrawPx(6,2,Blue);
     DrawPx(6,1,Blue);
-   
-   
+    DrawPx(5,1,Blue);
+    DrawPx(4,1,Blue);
+    DrawPx(3,1,Blue);
+    DrawPx(3,2,Blue);
+    DrawPx(3,4,Blue);
+    DrawPx(4,4,Blue);
+  
   
   }
   
